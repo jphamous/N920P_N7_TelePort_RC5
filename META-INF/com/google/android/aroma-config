@@ -1,0 +1,105 @@
+﻿### ROM INFORMATION
+ini_set("rom_name",			"N920P-G928P N7 TelePort");
+ini_set("rom_version",		"RC4.9");
+ini_set("rom_author",		"N5 TeleTeam");
+ini_set("rom_device",		"Samsung Galaxy Note5");
+ini_set("rom_date",			"4.01.2017");
+
+fontresload( "0", "ttf/DroidSans.ttf;", "12" ); #-- Use sets of font (Font Family)
+
+theme("Sense4");
+
+viewbox(
+    "Welcome",
+    "<b>"+
+	  ini_get("rom_name")+
+	"</b> for <b>"+ini_get("rom_device")+"</b>.\n\n"+
+    "ROM:\n\n"+
+          " DEVICE\t: <b><#selectbg_g>"+ini_get("rom_device")+"</#></b>\n"+
+		  " ROM NAME\t: <b><#selectbg_g>"+ini_get("rom_name")+"</#></b>\n"+
+		  " DEVELOPER\t: <b><#selectbg_g>"+ini_get("rom_author")+"</#></b>\n"+
+		  " VERSION\t: <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
+          " DATE\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n"+
+		  " FORUM\t: <b><#selectbg_g>"+"telegram.me/n7ton920ptelegram"+"</#></b>\n\n\n"+
+		  " NALEZING\t: <b><#selectbg_g>"+"Telecode: Do only what is absolutely necessary"+"</#></b>\n\n\n"+
+    "<b><#f00>A N7 PORT FOR THE SPRINT GALAXY NOTE5 </#></b>\n\n\n"+	
+	"A TeleTeam N5 Production",
+    "@welcome"
+);
+
+#Device Kernel
+	selectbox(
+			"Device",
+			"",
+			"@customize",
+			"device.prop",
+		  
+			"Device",	                                      "",         				     	            2,	#-- Group 1. key = "selected.1"
+			"N920P Note 5",								      "",		    			                    1,	#-- selected.1 = 1
+			"G928P S6 Edge+",							      "",        					                0	#-- selected.1 = 2
+		);
+
+#Camera
+	selectbox(
+			"Camera",
+			"",
+			"@customize",
+			"camera.prop",
+		  
+			" Camera ",	                                        "",         				     	    2,	#-- Group 1. key = "selected.1"
+			"Galaxy Note5 Camera",								"",					                    1,	#-- selected.1 = 1
+			"Galaxy Note7 Camera",						    	"",					                    0	#-- selected.1 = 2
+		);
+		
+#BST
+	selectbox(
+			"SecGallery",
+			"",
+			"@customize",
+			"bst.prop",
+		  
+			" SecGallery ",	                                "",         				     	    2,	#-- Group 1. key = "selected.1"
+			"Galaxy Note5 BST",								"",					                    1,	#-- selected.1 = 1
+			"Galaxy Note7 BST",						    	"",					                    0	#-- selected.1 = 2
+		);
+#Launcher
+	selectbox(
+			"Launcher",
+			"",
+			"@customize",
+			"bst.prop",
+		  
+			" Launcher ",	                                "",         				     	    2,	#-- Group 1. key = "selected.1"
+			"Nova",		     	"",					                  								1,	#-- selected.1 = 1
+			"TouchWiz Launcher",						    "",					                    0	#-- selected.1 = 2
+		);		
+
+		
+
+
+
+
+
+
+setvar("retstatus",
+  install(
+	#-- Title
+      "",
+	
+	#-- Installation Process message
+	  "<b>"+ini_get("rom_name")+"</b> Installing\n\n"+
+      "Hold Tight <b>"+ini_get("rom_author")+
+	  "</b> Are Making the Note 5 Great Again.",
+	
+	#-- Installation Icon
+      "@install",
+	
+	#Installation Finish Message
+      "A N5 TeleTeam Master Production <b>"+ini_get("rom_name")+
+	  "</b>. Please Reboot System after install."
+  )
+);
+
+ini_set("text_next", "kek");
+
+#---- FINISH

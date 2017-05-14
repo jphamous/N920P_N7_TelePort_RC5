@@ -1,0 +1,24 @@
+#!/system/bin/sh
+
+busybox mount -o remount,rw /
+busybox mount -o remount,rw rootfs
+busybox mount -o remount,rw /system
+
+busybox rm -f $LS
+busybox touch $LS
+
+# Scrolling cache
+setprop persist.sys.scrollingcache 3
+
+setprop windowsmgr.max_events_per_sec 90
+setprop ro.max.fling_velocity 12000
+setprop ro.min.fling_velocity 8000
+setprop touch.deviceType touchScreen
+setprop touch.orientationAware 1
+setprop touch.size.calibration diameter
+setprop touch.size.scale 32.0368
+setprop touch.size.bias -5.1253
+setprop touch.size.isSummed 0
+setprop touch.pressure.calibration amplitude
+setprop touch.pressure.scale 0.0125
+setprop touch.orientation.calibration none

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<apns>
+  <apn carrier="APN0 EHRPD ota" mcc="310" mnc="120" apn="otasn" mmsc="http://mms.sprintpcs.com" type="fota" />
+  <apn carrier="APN0 LTE ota" mcc="310" mnc="120" apn="otasn" mmsc="http://mms.sprintpcs.com" type="fota" />
+  <apn carrier="APN2 EHRPD internet" mcc="310" mnc="120" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" />
+  <apn carrier="APN2 LTE internet" mcc="310" mnc="120" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" preferred="true" />
+  <apn carrier="EHRPD - Boost OTA" mcc="311" mnc="870" apn="otasn" type="fota" />
+  <apn carrier="EHRPD - SPRINT OTA" mcc="310" mnc="120" apn="otasn" mmsc="http://mms.sprintpcs.com" type="fota" />
+  <apn carrier="EHRPD - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" />
+  <apn carrier="EHRPD - SPRINT test ISP" mcc="001" mnc="010" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" />
+  <apn carrier="EHRPD - SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" />
+  <apn carrier="EHRPD - SPRINT test OTA" mcc="001" mnc="010" apn="otasn" type="fota" />
+  <apn carrier="EHRPD - SPRINT test PAM" mcc="001" mnc="01" apn="pamsn" type="dun" />
+  <apn carrier="EHRPD - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" />
+  <apn carrier="EHRPD - Sprint Prepaid OTA" mcc="312" mnc="530" apn="otasn" type="fota" />
+  <apn carrier="EHRPD - Virgin OTA" mcc="311" mnc="490" apn="otasn" type="fota" />
+  <apn carrier="EHRPD - Wholesales OTA" mcc="310" mnc="000" apn="otasn" type="fota" />
+  <apn carrier="Global Roaming - Boost" mcc="311" mnc="870" apn="cinet.spcs" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" type="default,supl,mms,dun,fota" />
+  <apn carrier="Global Roaming - SPRINT" mcc="310" mnc="120" apn="cinet.spcs" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,supl,mms,dun,fota" />
+  <apn carrier="Global Roaming - WholeSales" mcc="310" mnc="000" apn="cinet.spcs" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" type="default,supl,mms,dun,fota" />
+  <apn carrier="LTE - Boost OTA" mcc="311" mnc="870" apn="otasn" type="fota" />
+  <apn carrier="LTE - SPRINT OTA" mcc="310" mnc="120" apn="otasn" mmsc="http://mms.sprintpcs.com" type="fota" />
+  <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" />
+  <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="010" apn="n.ispsn" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" type="default,mms" />
+  <apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" />
+  <apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="010" apn="otasn" type="fota" />
+  <apn carrier="LTE - SPRINT test PAM" mcc="001" mnc="01" apn="pamsn" type="dun" />
+  <apn carrier="LTE - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" />
+  <apn carrier="LTE - Sprint Prepaid OTA" mcc="312" mnc="530" apn="otasn" type="fota" />
+  <apn carrier="LTE - Virgin OTA" mcc="311" mnc="490" apn="otasn" type="fota" />
+  <apn carrier="LTE - Wholesales OTA" mcc="310" mnc="000" apn="otasn" type="fota" />
+</apns>

@@ -1,0 +1,10 @@
+9
+FBAppManager.apk
+FBInstaller.apk
+FBInstagram_stub.apk
+FBMessenger_stub.apk
+Facebook_stub.apk
+WhatsAppDownloader.apk
+Reminder.apk
+MyPlaces_Hero.apk
+GalaxyCare.apk

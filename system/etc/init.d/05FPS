@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+setprop debug.egl.swapinterval -60
+
+
